@@ -2,12 +2,11 @@ import React from 'react';
 import Card from './Card';
 
 const Cards = props => {
-
-  console.log(props.cards)
   return (
     <div className="cards-container">
       {props.cards.map(card => (
         <Card
+          key={Math.random()}
           card={card}
           headline={card.headline}
           tab={card.tab}
