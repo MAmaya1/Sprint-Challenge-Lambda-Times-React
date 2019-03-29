@@ -28,10 +28,23 @@ Look through the application code. If you have the old Lambda Times (Applied Jav
 
 ## Self-Study/Essay Questions
 
-- [ ] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
-- [ ] Describe a life-cycle event in React?
-- [ ] Explain the details of a Higher Order Component?
-- [ ] What are three different ways to style components in React? Explain some of the benefits of each.
+- [x] What are PropTypes used for? Please describe why it's important to type check our data in JavaScript.
+
+    Prop Types will type check properties passed to our components.  Prop types protect us from mistakes by ensuring that we are passing the correct data type into as a prop.  It is important to type check to make sure we are passing a component a string when it needs a string, and a number when it needs a number.
+
+- [x] Describe a life-cycle event in React?
+
+    A life-cycle event is a method we call at a certain point in a component's execution that allow us to update the user interface and application states.  For instance during our Mounting Phase we have our Constuctor, componentWillMount(), and render().  Each one performs a specific task at a different point in the life cycle.
+
+- [x] Explain the details of a Higher Order Component?
+
+    A Higher Order Component allow to reuse component logic.  We can pass other components into it as parameters, and process them conditionally such as displaying one component if a condition is met, or displaying another component if another condition is met.
+
+- [x] What are three different ways to style components in React? Explain some of the benefits of each.
+
+    External CSS:  Allows us to maintain separate stylesheets and import them as needed.
+    Reactstrap: Allows us to use a huge library of pre-built styles, and lets us import styled elements as needed quickly and efficiently.
+    Styled Components:  Styled components allow us to write CSS directly in our component's js file.  We no longer need external stylesheets, and it allows our styles to travel with our components as we reuse them.  Also, we are able to specify style properties which we can invoke as needed, such as setting up a primary color or other default style types.
 
 ## Project Setup
 
@@ -48,9 +61,9 @@ Follow these steps to set up your project:
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
-- [ ] Add your project manager as a reviewer on the pull-request
-- [ ] Your project manager will count the project as complete by merging the branch back into master.
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repository). **Please don't merge your own pull request**
+- [x] Add your project manager as a reviewer on the pull-request
+- [x] Your project manager will count the project as complete by merging the branch back into master.
 
 ## Minimum Viable Product
 
