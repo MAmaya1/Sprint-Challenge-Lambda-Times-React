@@ -5,6 +5,7 @@ import Cards from './Cards';
 
 // Importing our tab and card data. No need to change anything here.
 import { tabData, cardData } from '../../data';
+import Carousel from '../Carousel/Carousel';
 
 export default class Content extends Component {
   constructor(props) {
@@ -27,17 +28,11 @@ export default class Content extends Component {
     this.setState({
       selected: tab
     })
-  
-    // this function should take in the tab and update the state with the new tab.
   };
 
   filterCards = () => {
 
-    const filteredCards = this.state.cards.filter(card => {
-        if (card.tab === this.state.selected) {
-          return this.state.cards;
-        }
-    })
+    const filteredCards = this.state.cards.filter(card => card.tab === this.state.selected)
     
     if (this.state.selected === 'all') {
       return this.state.cards;
@@ -54,6 +49,7 @@ export default class Content extends Component {
           selectedTab={this.state.selected}
           selectTabHandler={this.changeSelected}
         />
+        <Carousel/>
         <Cards
           cards={this.filterCards()}
         />
